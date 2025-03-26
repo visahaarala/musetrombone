@@ -1,4 +1,4 @@
-import styles from './mizu.module.scss';
+import styles from './Mizu.module.scss';
 
 const Mizu = () => (
   <div className={styles.mizu}>
