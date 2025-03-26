@@ -1,0 +1,123 @@
+@import '../variables';
+
+$ratio-breakpoint: 0.7;
+
+$color-bg-landscape: transparent;
+$color-bg-landscape: #e3e5ea;
+$color-bg-landscape: #e2e6ee;
+$color-bg-landscape: #e9ecf2;
+$color-bg-portrait: #dfe6ec;
+
+.hero {
+  background-color: $color-bg-landscape;
+  @media (max-aspect-ratio: $ratio-breakpoint) and (max-width: $bp-narrow-layout) {
+    background-color: $color-bg-portrait;
+  }
+  // background-color: purple;
+
+  @media (min-width: 90em) and (max-height: calc(80em / 1.1)) {
+    min-height: var(--height-min-section);
+  }
+
+  @media (min-width: 70em) and (max-width: 90em) and (max-height: calc(70em / 1.1)) {
+    min-height: var(--height-min-section);
+  }
+
+  @media (max-width: 70em) and (min-aspect-ratio: 1.1) {
+    min-height: var(--height-min-section);
+  }
+
+  @media (min-aspect-ratio: 0.54) and (max-aspect-ratio: $ratio-breakpoint) and (max-width: $bp-narrow-layout) {
+    min-height: var(--height-min-section);
+  }
+
+  display: flex;
+  position: relative;
+
+  .image {
+    margin-top: auto;
+    width: 100%;
+    position: relative;
+
+    .landscape,
+    .portrait {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    // landscape
+    .landscape {
+      display: block;
+    }
+    .portrait {
+      padding-top: 1rem;
+      display: none;
+    }
+
+    // portrait
+    @media (max-aspect-ratio: $ratio-breakpoint) and (max-width: $bp-narrow-layout) {
+      .landscape {
+        display: none;
+      }
+      .portrait {
+        display: block;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+
+      // landscape
+      background-image: linear-gradient(
+          35deg,
+          transparent 67%,
+          $color-bg-landscape 82%
+        ),
+        linear-gradient(2deg, transparent 91%, $color-bg-landscape 97%),
+        linear-gradient(-2deg, transparent 92%, $color-bg-landscape 97%);
+
+      // portrait
+      @media (max-aspect-ratio: $ratio-breakpoint) and (max-width: $bp-narrow-layout) {
+        background-image: linear-gradient(
+          to top,
+          transparent 87%,
+          $color-bg-portrait 94%
+        );
+      }
+    }
+  }
+
+  .logo {
+    position: absolute;
+    height: auto;
+    z-index: 1;
+
+    // landscape
+    width: min(17rem, 28vw);
+    right: 6%;
+    top: 6%;
+    @media (min-width: 90em) {
+      top: 1.5rem;
+      width: 20rem;
+    }
+
+    // portrait
+    @media (max-aspect-ratio: $ratio-breakpoint) and (max-width: $bp-narrow-layout) {
+      top: 4%;
+      right: 9%;
+      width: 30vw;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

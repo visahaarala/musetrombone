@@ -1,0 +1,8 @@
+.videos {
+  width: 100%;
+  display: grid;
+
+  & > div {
+    display: flex;
+  }
+}

@@ -1,0 +1,27 @@
+.footer {
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--color-bg-header-light)
+  );
+
+  padding: var(--padding-section);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: min(3rem, max(2.4rem, 5vw));
+    a {
+      display: flex;
+      img {
+        height: max(1.6rem, min(4.5vw, 1.8rem));
+        width: auto;
+      }
+    }
+  }
+}

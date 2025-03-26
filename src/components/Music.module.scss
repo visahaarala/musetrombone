@@ -1,0 +1,16 @@
+.music {
+  background-color: #131415;
+
+  min-height: var(--height-min-section);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: var(--padding-section);
+
+  .horizontal-line {
+    margin: 1.2rem;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, #888, transparent);
+  }
+}

@@ -1,0 +1,27 @@
+.mizu {
+  padding: 2rem;
+
+  h1 {
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    text-transform: none;
+
+    &:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+  }
+
+  ul {
+    margin-left: 2rem;
+  }
+}
