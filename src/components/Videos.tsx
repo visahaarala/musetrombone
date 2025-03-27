@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './Videos.module.scss';
 import { CSSProperties, useEffect, useState } from 'react';
 import { videos } from '../data/videos';

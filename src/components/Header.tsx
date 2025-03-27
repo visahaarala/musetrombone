@@ -1,12 +1,9 @@
-'use client';
-
 import { useEffect, useRef, useState } from 'react';
 import styles from './Header.module.scss';
 import MenuButton from '../svg/MenuButton';
 import MenuCross from '../svg/MenuCross';
 import Language from '../svg/Language';
 import { footer, navLinks } from '../data/navigation';
-import { Link } from 'react-router-dom';
 
 const Header = ({ lang = 'en' }: { lang?: Language }) => {
   const [langVisible, setLangVisible] = useState(false);
