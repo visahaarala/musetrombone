@@ -8,10 +8,12 @@ import Home from './pages/Home';
 import Info from './pages/Info';
 import Mizu from './pages/Mizu';
 import Error from './pages/Error';
+import RootLayout from './pages/RootLayout';
 
 const router = createBrowserRouter([
   {
     path: '/',
+    element: <RootLayout />,
     errorElement: <Error />,
     children: [
       // fix this so that in japan it wil redirect to /jp
