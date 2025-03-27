@@ -86,7 +86,7 @@ const Header = ({ lang = 'en' }: { lang?: Language }) => {
               }`}
             >
               {lang === 'jp' ? (
-                <Link to='/en#top'>English</Link>
+                <a href='/en'>English</a>
               ) : (
                 <span
                   className={styles['lang--chosen']}
@@ -97,7 +97,7 @@ const Header = ({ lang = 'en' }: { lang?: Language }) => {
               )}
               <span className={styles['lang--slash']}>/</span>
               {lang === 'en' ? (
-                <Link to='/jp#top'>日本語</Link>
+                <a href='/jp'>日本語</a>
               ) : (
                 <span
                   className={styles['lang--chosen']}
