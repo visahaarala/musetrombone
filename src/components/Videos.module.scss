@@ -1,8 +1,29 @@
+@import '../variables';
+
+$heightToWidth: 270 / 480;
+
 .videos {
   width: 100%;
   display: grid;
+  gap: 1.5rem;
+
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: $bp-narrow-layout) {
+    grid-template-columns: unset;
+  }
 
   & > div {
+    width: 100%;
     display: flex;
+    padding-bottom: calc($heightToWidth * 100%);
+    position: relative;
+
+    & > iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
   }
 }
