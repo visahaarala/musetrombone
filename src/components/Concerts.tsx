@@ -42,8 +42,15 @@ const Concerts = ({ lang = 'en' }: { lang?: Language }) => {
 
   return (
     <section className={styles.concerts} id='concerts' lang={lang}>
-      <h2>Concerts</h2>
-      {concertList([...future, ...past])}
+      <div className={styles.background}>
+        <div>
+          <img src='/in-concert-2-med.jpg' alt='In concert' />
+        </div>
+      </div>
+      <div className={styles.content}>
+        <h2>Concerts</h2>
+        {concertList([...future, ...past])}
+      </div>
     </section>
   );
 };

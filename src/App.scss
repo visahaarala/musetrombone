@@ -39,6 +39,7 @@
   --height-min-section: calc(
     100svh - var(--height-header) + 1px
   ); // +1px for browser problems
+  --height-min-section-vh: calc(100vh - var(--height-header) + 1px);
 }
 
 *,
