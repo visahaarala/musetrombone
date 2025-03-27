@@ -83,7 +83,7 @@ const Header = ({ lang = 'en' }: { lang?: Language }) => {
               }`}
             >
               {lang === 'jp' ? (
-                <a href='/en'>English</a>
+                <a href='/'>English</a>
               ) : (
                 <span
                   className={styles['lang--chosen']}
