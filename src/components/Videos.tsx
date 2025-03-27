@@ -63,25 +63,28 @@ const Videos = () => {
   }, [gridWidth, windowWidth]);
 
   return (
-    <div style={gridStyle} className={styles['videos']} id='videos'>
-      {showVideos &&
-        videoWidth &&
-        videos.map((video) => (
-          <div key={Math.random()}>
-            <iframe
-              key={Math.random()}
-              width={videoWidth}
-              height={videoWidth * heightToWidth}
-              src={video.src}
-              title={video.title}
-              frameBorder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              referrerPolicy='strict-origin-when-cross-origin'
-              allowFullScreen
-            />
-          </div>
-        ))}
-    </div>
+    <>
+      <p>Music</p>
+      <div style={gridStyle} className={styles['videos']} id='videos'>
+        {showVideos &&
+          videoWidth &&
+          videos.map((video) => (
+            <div key={Math.random()}>
+              <iframe
+                key={Math.random()}
+                width={videoWidth}
+                height={videoWidth * heightToWidth}
+                src={video.src}
+                title={video.title}
+                frameBorder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                referrerPolicy='strict-origin-when-cross-origin'
+                allowFullScreen
+              />
+            </div>
+          ))}
+      </div>
+    </>
   );
 };
 
