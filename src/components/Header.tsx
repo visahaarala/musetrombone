@@ -6,7 +6,6 @@ import MenuButton from '../svg/MenuButton';
 import MenuCross from '../svg/MenuCross';
 import Language from '../svg/Language';
 import { footer, navLinks } from '../data/navigation';
-import { Link } from 'react-router-dom';
 
 const Header = ({ lang = 'en' }: { lang?: Language }) => {
   const [langVisible, setLangVisible] = useState(false);
@@ -86,7 +85,7 @@ const Header = ({ lang = 'en' }: { lang?: Language }) => {
               }`}
             >
               {lang === 'jp' ? (
-                <Link to='/en'>English</Link>
+                <a href='/en#top'>English</a>
               ) : (
                 <span
                   className={styles['lang--chosen']}
@@ -97,7 +96,7 @@ const Header = ({ lang = 'en' }: { lang?: Language }) => {
               )}
               <span className={styles['lang--slash']}>/</span>
               {lang === 'en' ? (
-                <Link to='/jp'>日本語</Link>
+                <a href='/jp#top'>日本語</a>
               ) : (
                 <span
                   className={styles['lang--chosen']}
