@@ -33,6 +33,11 @@ const Mizu = () => (
       <li>multiLanguage(&apos;&apos;)</li>
       <li>new Date(&apos;YYYY-MM-DD&apos;)</li>
     </ul>
+    <h2>Siisti tiedoston rakenne ja tallenna</h2>
+    <ul>
+      <li>Siisti rakenne: &nbsp; shift + alt + F</li>
+      <li>Tallenna: &nbsp; ⌘ + S</li>
+    </ul>
     <h2>Tarkastele muutoksia selaimessa</h2>
     <ul>
       <li>
@@ -44,9 +49,7 @@ const Mizu = () => (
           <a href='http://localhost:5173'>http://localhost:5173</a>
         </code>
       </li>
-      <li>
-        pysäytä serveri (terminaalissa): &nbsp; control + C
-      </li>
+      <li>pysäytä serveri (terminaalissa): &nbsp; control + C</li>
     </ul>
     <h2>Tallenna muutokset github.com versionhallintaan</h2>
     <ul>
