@@ -25,12 +25,23 @@ export const concerts: Concert[] = [
   // Mizuho muokkaa allaolevia:
 
   {
-    name: multiLanguage('Lieksa Brass Week'),
+    name: multiLanguage('Carnival of the animals'
+
+    ),
     venue: multiLanguage('Brahesali'),
     location: multiLanguage('Lieksa, Finland'),
     date: new Date('2025-07-27'),
     url: 'https://www.lieksabrass.com',
   }, // 2025-07-27
+  {
+    name: multiLanguage('Song and Dance'),
+    // venue: multiLanguage('Lieksa church リエクサ教会'),
+    venue: { en: 'Lieksa church', jp: 'リエクサ教会' },
+    location: { en: 'Lieksa, Finland', jp: 'フィンランド、リエクサ' },
+    date: new Date('2025-07-29'),
+    url: 'https://www.lieksabrass.com/program',
+  }, // ,
+
   {
     name: multiLanguage('Japan Tour 2023'),
     venue: multiLanguage('フィリアホール'),
