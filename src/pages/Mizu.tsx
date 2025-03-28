@@ -39,7 +39,10 @@ const Mizu = () => (
         aloita serveri: &nbsp; <code>npm run dev</code>
       </li>
       <li>
-        avaa selain osoitteessa: &nbsp; <code>http://localhost:3000/</code>
+        avaa selain osoitteessa: &nbsp;{' '}
+        <code>
+          <a href='http://localhost:5173'>http://localhost:5173</a>
+        </code>
       </li>
     </ul>
     <h2>Tallenna muutokset github.com versionhallintaan</h2>
