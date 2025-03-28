@@ -1,6 +1,7 @@
 // viesti mizulle
 // viesti Visalle
 // kiitos viestistä!
+// eli tähän kirjoitetaan jotain kysyttävää yms. joita ei halua sinne sivuille?
 
 import multiLanguage from '../utils/multiLanguage';
 
