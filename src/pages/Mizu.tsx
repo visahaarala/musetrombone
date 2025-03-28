@@ -48,6 +48,9 @@ const Mizu = () => (
     <h2>Tallenna muutokset github.com versionhallintaan</h2>
     <ul>
       <li>
+        katso missä tiedostoissa on muutoksia: &nbsp; <code>git status</code>
+      </li>
+      <li>
         päivitä muutetut tiedostot: &nbsp; <code>git add .</code>
       </li>
       <li>
