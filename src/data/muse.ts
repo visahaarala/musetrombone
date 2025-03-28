@@ -1,11 +1,5 @@
 import multiLanguage from '../utils/multiLanguage';
 
-// import mayumi from '../img/Mayumi.webp';
-// import shiori from '../img/Shiori.webp';
-// import mizuho from '../img/Mizuho.webp';
-// import rina from '../img/Rina.webp';
-// import rena from '../img/Rena.webp';
-
 export const muse: LangContent[] = [
   //
   // Mizuho muokkaa allaolevia:
