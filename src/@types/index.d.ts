@@ -1,5 +1,3 @@
-// import { JSX } from "react";
-
 type Language = 'en' | 'jp';
 
 type LangContent = {
@@ -9,6 +7,7 @@ type LangContent = {
 
 type Concert = {
   name: LangContent;
+  festival?: LangContent;
   venue: LangContent;
   location: LangContent;
   date: Date;
@@ -48,10 +47,10 @@ type NavLink = {
   name: LangContent;
   link: string;
   element: React.JSX.Element;
-}
+};
 
 type SocialLink = {
   href: string;
   src: string;
   alt: string;
-}
+};

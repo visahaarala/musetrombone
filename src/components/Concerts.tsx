@@ -16,6 +16,13 @@ const Concerts = ({ lang = 'en' }: { lang?: Language }) => {
     <div key={index} className={styles.concert}>
       <div className={styles.concert__name}>{concert.name[lang]}</div>
       <div className={styles['concert__date-venue']}>
+        {concert.festival ? (
+          <div className={styles.concert__festival}>
+            {concert.festival[lang]}
+          </div>
+        ) : (
+          ''
+        )}
         <div>{concert.date.toDateString()}</div>
         <div className={styles.concert__venue}>
           {concert.venue[lang]}
@@ -23,20 +30,6 @@ const Concerts = ({ lang = 'en' }: { lang?: Language }) => {
           {concert.location[lang]}
         </div>
       </div>
-    </div>
-  );
-
-  const concertList = (concerts: Concert[]) => (
-    <div className={styles.concertList}>
-      {concerts.map((concert, index) => (
-        <div key={index} className={styles.concert}>
-          {concert.url ? (
-            <a href={concert.url}>{concertContent(concert, index)}</a>
-          ) : (
-            concertContent(concert, index)
-          )}
-        </div>
-      ))}
     </div>
   );
 
@@ -49,7 +42,18 @@ const Concerts = ({ lang = 'en' }: { lang?: Language }) => {
       </div>
       <div className={styles.content}>
         <h2>Concerts</h2>
-        {concertList([...future, ...past])}
+        <div className={styles.concertList}>
+          {[...future, ...past].map((concert, index) => (
+            <div key={index} className={styles.gridDiv}>
+              {concert.url ? (
+                <a href={concert.url}>{concertContent(concert, index)}</a>
+              ) : (
+                concertContent(concert, index)
+              )}
+            </div>
+          ))}
+        </div>
+        {/* {concertList([...future, ...past])} */}
       </div>
     </section>
   );
