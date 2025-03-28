@@ -53,7 +53,6 @@ const Concerts = ({ lang = 'en' }: { lang?: Language }) => {
             </div>
           ))}
         </div>
-        {/* {concertList([...future, ...past])} */}
       </div>
     </section>
   );
