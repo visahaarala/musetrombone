@@ -53,6 +53,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -62,7 +63,7 @@ body {
   color: var(--color-font);
 
   font-family: 'Nunito Sans', sans-serif;
-  // font-optical-sizing: auto;
+  font-optical-sizing: auto;
 }
 
 .container {
