@@ -52,7 +52,7 @@ const Mizu = () => (
       </li>
       <li>
         tallenna muutokset paikallisesti: &nbsp;{' '}
-        <code>git commit -m &quot;&lt;lyhyt_viesti_itsellesi&gt;&quot;</code>
+        <code>git commit -m &quot;&lt;lyhyt_viesti&gt;&quot;</code>
       </li>
       <li>
         tallenna muutokset github.com serverille: &nbsp; <code>git push</code>
