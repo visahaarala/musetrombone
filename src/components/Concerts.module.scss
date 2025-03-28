@@ -50,12 +50,13 @@
       z-index: 1;
       display: grid;
       row-gap: 3rem;
-      column-gap: 1rem;
       padding-bottom: 1rem; // extra padding for "show more.."
-
-      grid-template-columns: 1fr max-content 1fr max-content 1fr;
+      
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+      column-gap: 1rem;
       @media (max-width: $bp-narrow-layout) {
-        grid-template-columns: 1fr max-content 1fr;
+        grid-template-columns: 1fr auto 1fr;
+        column-gap: 0;
       }
 
       .concert {
