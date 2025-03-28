@@ -9,7 +9,7 @@ const Mizu = () => (
         ⌘ + space &rarr; <code>terminal</code>
       </li>
       <li>
-        <code>cd ~/Programming/musetrombone</code>
+        <code>cd Programming/musetrombone</code>
       </li>
       <li>
         <code>code .</code>
