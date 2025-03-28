@@ -36,13 +36,16 @@ const Mizu = () => (
     <h2>Tarkastele muutoksia selaimessa</h2>
     <ul>
       <li>
-        aloita serveri: &nbsp; <code>npm run dev</code>
+        aloita serveri (terminaalissa): &nbsp; <code>npm run dev</code>
       </li>
       <li>
-        avaa selain osoitteessa: &nbsp;{' '}
+        avaa selain osoitteessa (safari): &nbsp;{' '}
         <code>
           <a href='http://localhost:5173'>http://localhost:5173</a>
         </code>
+      </li>
+      <li>
+        pysäytä serveri (terminaalissa): &nbsp; control + C
       </li>
     </ul>
     <h2>Tallenna muutokset github.com versionhallintaan</h2>
