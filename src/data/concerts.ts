@@ -1,5 +1,6 @@
 // viesti mizulle
 // viesti Visalle
+// kiitos viestistä!
 
 import multiLanguage from '../utils/multiLanguage';
 
