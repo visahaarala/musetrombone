@@ -11,7 +11,7 @@ type Concert = {
   venue: LangContent;
   location: LangContent;
   date: Date;
-  url?: string;
+  website?: string;
 };
 
 type Video = {

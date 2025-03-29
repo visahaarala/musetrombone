@@ -26,19 +26,23 @@ export const concerts: Concert[] = [
 
   {
     name: multiLanguage('Song and Dance'),
+    // festival is optional
     festival: multiLanguage('Lieksa Brass Week'),
     venue: { en: 'Lieksa church', jp: 'リエクサ教会' },
     location: { en: 'Lieksa, Finland', jp: 'フィンランド、リエクサ' },
     date: new Date('2025-07-29'),
-    url: 'https://www.lieksabrass.com/program',
+    // website is optional
+    website: 'https://www.lieksabrass.com/program',
   },
   {
     name: multiLanguage('Carnival of the animals'),
+    // festival is optional
     festival: multiLanguage('Lieksa Brass Week'),
     venue: multiLanguage('Brahesali'),
     location: multiLanguage('Lieksa, Finland'),
     date: new Date('2025-07-27'),
-    url: 'https://www.lieksabrass.com',
+    // website is optional
+    website: 'https://www.lieksabrass.com',
   },
   {
     name: multiLanguage('Japan Tour 2023'),

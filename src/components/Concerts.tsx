@@ -45,8 +45,8 @@ const Concerts = ({ lang = 'en' }: { lang?: Language }) => {
         <div className={styles.concertList}>
           {[...future, ...past].map((concert, index) => (
             <div key={index} className={styles.gridDiv}>
-              {concert.url ? (
-                <a href={concert.url}>{concertContent(concert, index)}</a>
+              {concert.website ? (
+                <a href={concert.website}>{concertContent(concert, index)}</a>
               ) : (
                 concertContent(concert, index)
               )}
