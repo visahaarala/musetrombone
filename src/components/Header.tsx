@@ -46,7 +46,13 @@ const Header = ({ lang = 'en' }: { lang?: Language }) => {
       </div>
       <header className={styles.header}>
         <div className={styles.title}>
-          <a href='#top' onClick={() => setShowMenu(false)}>
+          <a
+            href='#top'
+            onClick={() => {
+              setShowMenu(false);
+              setLangVisible(false);
+            }}
+          >
             Muse Trombone Quartet
           </a>
         </div>
@@ -54,7 +60,15 @@ const Header = ({ lang = 'en' }: { lang?: Language }) => {
           <ul className={styles.links}>
             {links.map((link) => (
               <li key={link.name.en}>
-                <a href={`#${link.link}`}>{link.name[lang]}</a>
+                <a
+                  href={`#${link.link}`}
+                  onClick={() => {
+                    setLangVisible(false);
+                    setShowMenu(false);
+                  }}
+                >
+                  {link.name[lang]}
+                </a>
               </li>
             ))}
           </ul>
