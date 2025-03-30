@@ -3,13 +3,14 @@ import styles from './ApiTest.module.scss';
 
 const dev = import.meta.env.DEV;
 
+const url = dev
+  ? 'http://localhost:3000/test'
+  : 'https://api.musetrombone.singingtrumpet.com/test';
+
 const ApiTest = () => {
   const [msg, setMsg] = useState('');
 
   useEffect(() => {
-    const url = dev
-      ? 'http://localhost:3000/test'
-      : 'https://api.musetrombone.singingtrumpet.com/test';
     (async () => {
       return await fetch(url);
     })()
@@ -20,8 +21,9 @@ const ApiTest = () => {
 
   return (
     <div className={styles.apiTest}>
-      <h2>Api test</h2>
+      <h2>Api test 2</h2>
       <p>{msg}</p>
+      <p>{url}</p>
     </div>
   );
 };
