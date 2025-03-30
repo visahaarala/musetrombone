@@ -27,9 +27,6 @@ const Contact = () => {
         </div>
         <button>Send message</button>
       </div>
-      {/* <div className={styles.test} />
-      <div className={styles.test2} />
-      <div className={styles.test3} /> */}
     </section>
   );
 };

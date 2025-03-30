@@ -15,11 +15,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: min(3rem, max(2.4rem, 5vw));
+    gap: min(3.5rem, max(2.3rem, 8vw));
     a {
       display: flex;
       img {
-        height: max(1.6rem, min(4.5vw, 1.8rem));
+        height: 2rem;
         width: auto;
       }
     }
