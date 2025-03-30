@@ -1,19 +1,21 @@
 import { useEffect, useState } from 'react';
 import styles from './ApiTest.module.scss';
 
+const dev = import.meta.env.DEV;
+
 const ApiTest = () => {
   const [msg, setMsg] = useState('');
 
-  console.log('dev: ', import.meta.env.DEV);
-
   useEffect(() => {
-    setMsg('dummy message');
-    // (async () => {
-    //   return await fetch('http://localhost:3000/test');
-    // })()
-    //   .then((res) => res.json())
-    //   .then((json) => setMsg(json.message))
-    //   .catch(console.error);
+    const url = dev
+      ? 'http://localhost:3000/test'
+      : 'https://api.musetrombone.singingtrumpet.com/test';
+    (async () => {
+      return await fetch(url);
+    })()
+      .then((res) => res.json())
+      .then((json) => setMsg(json.message))
+      .catch(console.error);
   }, []);
 
   return (
