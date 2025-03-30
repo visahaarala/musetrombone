@@ -9,6 +9,7 @@ import Info from './pages/Info';
 import Mizu from './pages/Mizu';
 import Error from './pages/Error';
 import RootLayout from './pages/RootLayout';
+import ApiTest from './pages/ApiTest';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: 'jp', element: <Home lang={'jp'} /> },
       { path: 'info', element: <Info /> },
       { path: 'mizu', element: <Mizu /> },
+      { path: 'apitest', element: <ApiTest /> },
       { path: '*', loader: async () => redirect('/') },
     ],
   },
