@@ -1,0 +1,35 @@
+.input {
+  border-radius: 0.1rem;
+  overflow: hidden;
+
+  input,
+  textarea {
+    width: 100%;
+    display: block;
+    font: inherit;
+    background-color: #fffe;
+    padding: 0.3rem 0.5rem;
+    border: none;
+    min-width: 0; // remove default min-width for layouts down to 300px wide
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #0009;
+    }
+  }
+}
+
+.error {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: red;
+  }
+}

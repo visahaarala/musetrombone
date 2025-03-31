@@ -1,6 +1,6 @@
 .contact {
-  position: relative;
   background-color: var(--color-bg-contact);
+  position: relative;
 
   /// WIDE IMAGE
   $ratio: 800/1200;
@@ -78,53 +78,53 @@
 
   .form {
     position: absolute;
-    bottom: 0;
-    padding: 2rem 0;
+    padding: var(--padding-section);
     left: 50%;
     transform: translateX(-50%);
-    width: min(40rem, 80%);
-
+    width: 90%;
+    bottom: 0;
+    max-width: 40rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 
     h2 {
-      text-align: start;
-      padding: 0;
-    }
-
-    & > div {
-      display: flex;
-      align-items: center; // labels: name, email
-      width: 100%;
-
-      label {
-        width: 4rem;
-      }
-
-      input,
-      textarea {
-        font: inherit;
-        background-color: #fffe;
-        flex: 1;
-        padding: 0.4rem 0.6rem;
-        border: none;
-        min-width: 0; // remove default min-width for layouts down to 300px wide
-        &:focus {
-          outline: none;
-        }
-      }
-    }
-
-    button {
+      $shadow: #0124;
+      text-shadow: 0 0 0.4rem black;
+      background-color: $shadow;
       align-self: center;
-      font-family: inherit;
-      font-size: 0.9em;
-      cursor: pointer;
-      padding: 0.5rem 2rem;
-      background-color: #ddd;
-      border-radius: 0.3rem;
-      color: var(--color-bg-body);
+      // height: 1.3rem;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 5rem 5rem $shadow;
+    }
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      button {
+        align-self: center;
+        font-family: inherit;
+        font-size: 0.9em;
+        cursor: pointer;
+        padding: 0.5rem 2rem;
+        background-color: #ddd;
+        border-radius: 0.3rem;
+        color: var(--color-bg-body);
+      }
+
+      .error {
+        align-self: center;
+        font-weight: 300;
+        letter-spacing: 0.05rem;
+        // color: #fee;
+        // margin-top: -0.3rem;
+        // margin-left: 0.4rem;
+        height: 1.3rem;
+        display: flex;
+        align-items: center;
+      }
     }
   }
 }
