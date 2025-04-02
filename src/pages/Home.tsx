@@ -10,10 +10,10 @@ const Home = ({ lang }: { lang: Language }) => (
   <>
     <Header lang={lang} />
     <main>
-      {/* <Hero />
+      <Hero />
       <Muse lang={lang} />
       <Concerts lang={lang} />
-      <Music lang={lang} /> */}
+      <Music lang={lang} />
       <Contact />
     </main>
     <Footer />
