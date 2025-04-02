@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import styles from './Contact.module.scss';
 import InputField from './InputField';
 
@@ -12,6 +12,7 @@ export type InputProps = {
   name: string;
   type: 'input' | 'textarea';
   placeholder: string;
+  isOnState?: [boolean, Dispatch<SetStateAction<boolean>>];
   valueState: [string, Dispatch<SetStateAction<string>>];
 };
 
@@ -27,6 +28,7 @@ const Contact = () => {
       name: 'email',
       type: 'input',
       placeholder: 'Email',
+      isOnState: useState(true),
       valueState: useState(''),
     },
     {
@@ -45,11 +47,13 @@ const Contact = () => {
 
   const [errorMsg, setErrorMsg] = useState('');
   const [errorField, setErrorField] = useState('');
+  const [msgSent, setMsgSent] = useState(false);
 
   const sendMessage = () => {
     const body: { [key: string]: string } = {};
     for (const props of inputPropsArray) {
-      body[props.name] = props.valueState[0];
+      if (props.isOnState === undefined || props.isOnState[0])
+        body[props.name] = props.valueState[0];
     }
     fetch(`${url}/send-message`, {
       method: 'POST',
@@ -64,10 +68,15 @@ const Contact = () => {
         } else {
           setErrorMsg(json.message);
           setErrorField('');
+          setMsgSent(true);
         }
       })
       .catch(console.error);
   };
+
+  useEffect(() => {
+    document.getElementById(`input-${errorField}`)?.focus();
+  }, [errorField]);
 
   return (
     <section className={styles.contact} id='contact'>
@@ -80,7 +89,10 @@ const Contact = () => {
         </div>
       </div>
       <div className={styles.colorFill} />
-      <div className={styles.form}>
+      <div
+        className={`${styles.form} 
+        ${msgSent ? styles['form--sent'] : ''}`}
+      >
         <h2>Contact</h2>
         <div className={styles.inputs}>
           {inputPropsArray.map((props) => {
@@ -89,11 +101,14 @@ const Contact = () => {
                 key={props.name}
                 props={props}
                 error={props.name === errorField}
+                disabled={msgSent}
               />
             );
           })}
           <div className={styles.error}>{errorMsg}</div>
-          <button onClick={() => sendMessage()}>Send message</button>
+          <button onClick={() => sendMessage()} disabled={msgSent}>
+            Send message
+          </button>
         </div>
       </div>
     </section>
