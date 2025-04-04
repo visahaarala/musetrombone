@@ -21,7 +21,7 @@ const ApiTest = () => {
 
   return (
     <div className={styles.apiTest}>
-      <h2>Api test 2</h2>
+      <h2>Api test 3</h2>
       <p>{msg}</p>
       <p>{url}</p>
     </div>
