@@ -4,14 +4,15 @@ import styles from './ApiTest.module.scss';
 const dev = import.meta.env.DEV;
 
 const url = dev
-  ? 'http://localhost:3000/test'
-  : 'https://api.musetrombone.singingtrumpet.com/test';
+  ? 'http://localhost:3000'
+  : 'https://api.musetrombone.singingtrumpet.com';
 
 const ApiTest = () => {
   const [msg, setMsg] = useState('');
 
   useEffect(() => {
     (async () => {
+      // return await fetch(url + '/test');
       return await fetch(url);
     })()
       .then((res) => res.json())
