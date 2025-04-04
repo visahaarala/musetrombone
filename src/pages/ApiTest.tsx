@@ -13,7 +13,7 @@ const ApiTest = () => {
   useEffect(() => {
     (async () => {
       // return await fetch(url + '/test');
-      return await fetch(url);
+      return await fetch(url + '/test');
     })()
       .then((res) => res.json())
       .then((json) => setMsg(json.message))
