@@ -15,10 +15,6 @@
 
   --color-font: #eee;
 
-  // --max-width: 70em;
-  // @media (min-width: $bp-max-width-large) {
-  //   --max-width: 80rem;
-  // }
   --max-width: 80rem;
   @media (max-width: $bp-max-width-large) and (pointer: fine) {
     --max-width: 70rem;
