@@ -40,7 +40,7 @@ const Contact = () => {
     {
       name: 'instrument',
       type: 'input',
-      placeholder: "Mayumi's instrument? (security question)",
+      placeholder: "Mayumi's instrument? (security)",
       valueState: useState(''),
     },
   ];

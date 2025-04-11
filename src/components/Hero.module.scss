@@ -103,10 +103,6 @@ $color-bg-portrait: #dfe6ec;
     width: min(17rem, 28vw);
     right: 6%;
     top: 6%;
-    @media (min-width: 90em) {
-      top: 1.5rem;
-      width: 20rem;
-    }
 
     // portrait
     @media (max-aspect-ratio: $ratio-breakpoint) and (max-width: $bp-narrow-layout) {
