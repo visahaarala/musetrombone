@@ -69,9 +69,8 @@ const Contact = () => {
           setErrorMsg(json.message);
           setErrorField('');
           setMsgSent(true);
-          if (json.error) {
-            console.log({ server_error_msg: json.error });
-          }
+          // FOR DEV PURPOSES
+          console.log({ json });
         }
       })
       .catch(console.error);
