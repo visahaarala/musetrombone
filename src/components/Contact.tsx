@@ -46,7 +46,7 @@ const Contact = () => {
   ];
 
   const [errorMsg, setErrorMsg] = useState('');
-  const [errorField, setErrorField] = useState('');
+  const [errorField, setErrorField] = useState<string>();
   const [msgSent, setMsgSent] = useState(false);
 
   const sendMessage = () => {
@@ -69,6 +69,9 @@ const Contact = () => {
           setErrorMsg(json.message);
           setErrorField('');
           setMsgSent(true);
+          if (json.error) {
+            console.log({ server_error_msg: json.error });
+          }
         }
       })
       .catch(console.error);
