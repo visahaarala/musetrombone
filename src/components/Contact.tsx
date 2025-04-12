@@ -70,7 +70,7 @@ const Contact = () => {
           setErrorField('');
           setMsgSent(true);
           // FOR DEV PURPOSES
-          console.log({ json, errmsg: json.error?.message });
+          console.log({ json });
         }
       })
       .catch(console.error);
