@@ -6,11 +6,11 @@ export const muse: LangContent[] = [
 
   {
     en: "Muse Trombone Quartet was founded by Mayumi Shimizu, a principal trombonist of the Southwest German Radio (SWR) Symphony Orchestra Baden-Baden and Freiburg, and three other Japanese women low brass players living in European cities; Shiori Doi in Dresden, Rina Endo in Leipzig and Mizuho Kojima in Helsinki. Rena Takeda, who currently lives in Japan, serves as the ensemble's percussionist.",
-    jp: "Google Translate: ミューズ・トロンボーン・カルテットは、バーデン・バーデンとフライブルクの南西ドイツ放送交響楽団の首席トロンボーン奏者である清水真由美と、ヨーロッパの都市に住む他の3人の日本人女性低音金管楽器奏者、ドレスデンの土井詩織、ライプツィヒの遠藤里奈、ヘルシンキの小島瑞穂によって結成されました。現在日本に住んでいる武田玲奈がアンサンブルの打楽器奏者を務めています。",
+    jp: "ヨーロッパで活動する日本人女性トロンボーン奏者とマルチ・パーカッショニスト武田怜奈によるアンサンブル。2021年の年の結成以来、既に2回に日本ツアーを行い、CDアルバム 「Song & Dance」はレコード芸術誌の特選盤に選ばれる。スタンダードなトロンボーンアンサンブルの曲に加え、オリジナルの編曲作品等、斬新なアイディアを取り入れ、新たな音楽表現の境地を切り拓く。",
   },
   {
     en: "Muse trombone quartet's first performance was held in Koskela church, Helsinki 2021. In the same year, the ensemble had a Japan tour having 7 concerts and released the CD album “Song & Dance” (Octavia Records), which received a “special choice” mention in the Record Geijutsu -magazine. In 2022, the quartet appeared at the Erft Classics -festival in Germany and had toured again in Japan. The ensemble has been praised for its “brilliant sound and versatile stage” (Band Journal) and “original arrangements, beautiful phrasing and harmony” (Record Geijutsu).",
-    jp: "Google Translate: ミューズトロンボーンカルテットは、2021年にヘルシンキのコスケラ教会で初公演を行いました。同年、アンサンブルは7回のコンサートを含む日本ツアーを行い、CDアルバム「Song & Dance」（オクタヴィアレコード）をリリースしました。このアルバムは、レコード芸術誌で「特選」に選ばれました。2022年には、カルテットはドイツのエアフトクラシックスフェスティバルに出演し、日本で再びツアーを行いました。アンサンブルは、「素晴らしいサウンドと多彩なステージ」（バンドジャーナル）、「独創的なアレンジ、美しいフレージングとハーモニー」（レコード芸術）と称賛されています。",
+    jp: "「壮麗な音色と多才な構成で充実感満点のステージ」 -バンドジャーナル誌",
   },
 ];
 
