@@ -45,6 +45,12 @@ export const concerts: Concert[] = [
     website: 'https://www.lieksabrass.com',
   },
   {
+    name: multiLanguage('Japan Tour 2025 生命の躍動'),
+    venue: multiLanguage('成田スカイタウンホール'),
+    location: multiLanguage('Narita, 千葉県成田市'),
+    date: new Date('2025-09-28'),
+  },
+  {
     name: multiLanguage('Japan Tour 2023'),
     venue: multiLanguage('フィリアホール'),
     location: multiLanguage('横浜'),
