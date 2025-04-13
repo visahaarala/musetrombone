@@ -47,8 +47,26 @@ export const concerts: Concert[] = [
   {
     name: multiLanguage('Japan Tour 2025 生命の躍動'),
     venue: multiLanguage('成田スカイタウンホール'),
-    location: multiLanguage('Narita, 千葉県成田市'),
-    date: new Date('2025-09-28'),
+    location: multiLanguage('成田'),
+    date: new Date('2025-10-09'),
+  },
+  {
+    name: multiLanguage('Japan Tour 2025 生命の躍動'),
+    venue: multiLanguage('YCC県民文化ホール'),
+    location: multiLanguage('甲府'),
+    date: new Date('2025-10-13'),
+  },
+  {
+    name: multiLanguage('Japan Tour 2025 生命の躍動'),
+    venue: multiLanguage('渋谷区文化総合センター 大和田さくらホール'),
+    location: multiLanguage('東京'),
+    date: new Date('2025-10-16'),
+  },
+   {
+    name: multiLanguage('Japan Tour 2022'),
+    venue: multiLanguage('電気文化会館 ザ・コンサートホール'),
+    location: multiLanguage('愛知県名古屋市'),
+    date: new Date('2022-08-09'),
   },
   {
     name: multiLanguage('Japan Tour 2023'),
@@ -89,7 +107,48 @@ export const concerts: Concert[] = [
     location: multiLanguage('Helsinki, Finland'),
     date: new Date('2022-04-24'),
   },
-
+  {
+    name: multiLanguage('Japan Tour 2022'),
+    venue: multiLanguage('電気文化会館 ザ・コンサートホール'),
+    location: multiLanguage('名古屋市'),
+    date: new Date('2022-08-09'),
+  },
+  {
+    name: multiLanguage('Japan Tour 2022'),
+    venue: multiLanguage('高崎芸術芸場 音楽ホール'),
+    location: multiLanguage('高崎'),
+    date: new Date('2022-08-11'),
+  },
+  {
+    name: multiLanguage('Japan Tour 2022'),
+    venue: multiLanguage('ザ・フェニックスホール'),
+    location: multiLanguage('大阪'),
+    date: new Date('2022-08-12'),
+  },
+  {
+    name: multiLanguage('Japan Tour 2022'),
+    venue: multiLanguage('トッパンホール'),
+    location: multiLanguage('東京'),
+    date: new Date('2022-08-14'),
+  },
+  {
+    name: multiLanguage('Japan Tour 2022'),
+    venue: multiLanguage('愛媛県民文化会館サブホール'),
+    location: multiLanguage('松山'),
+    date: new Date('2022-08-16'),
+  },
+  {
+    name: multiLanguage('Japan Tour 2022'),
+    venue: multiLanguage('静岡音楽館AOI'),
+    location: multiLanguage('静岡'),
+    date: new Date('2022-08-18'),
+  },
+  {
+    name: multiLanguage('Japan Tour 2022'),
+    venue: multiLanguage('パレット市民劇場'),
+    location: multiLanguage('沖縄'),
+    date: new Date('2022-08-20'),
+  },
   ////////////////////////
   // EXTRA -- REMOVE THESE
   // for layout testing
