@@ -42,9 +42,10 @@ export const musicians: Musician[] = [
     instrument: multiLanguage("Tenor Trombone & Euphonium"),
     story: {
       en: "Finland-based euphonium-trombone player Mizuho Kojima grew up in Tokyo, where she studied under Toru Miura at the Kunitachi College of Music. After graduating, she moved to Finland to study with Jukka Myllys at the Sibelius Academy. In 2023, she premiered Kalevi Aho´s euphonium concerto with the Kymi Sinfonietta, conducted by Okko Kamu. Mizuho has earned first prizes in the Lahti Wind Instrument Competition (Finland) in 2003 and the 21st Japan Wind and Percussion Competition in 2004. She has also appeared as a guest artist at renowned festivals such as the Lieksa Brass Week, Kymi Brass (Finland), Thailand Brass Festival, and the International Womens Brass Conference(USA). A passionate chamber musician, Mizuho is a proud member of both the Euphoria Brass Sextet and the Muse Trombone Quartet.Alongside her performing career, she is a dedicated educator, teaching at the Käpylä Music Institute and North Helsinki Music Institute, where she shares her knowledge and inspires the next generation of brass musicians.",
-      jp: "東京都調布市出身。国立音楽大学にて、ユーフォニアムを三浦徹氏に師事、卒業時に武岡賞を受賞。フィンランド国立シベリウス音楽院に入学し、ユーフォニアムをユッカ・ミュリュス氏に師事、2010年同学院修士号取得。在学中に副科でトロンボーンを始め、現在はユーフォニアムとトロンボーンの両方でフリーランス奏者、音楽学校講師として活動。世界中の音楽祭にもゲスト出演している。第21回日本管打楽器コンクール・ユーフォニアム部門第一位受賞。2023年6月、フィンランドを代表する作曲家カレヴィ・アホのユーフォニアム協奏曲を世界初演し、好評を得る。ユーフォリア・ブラス・セクステットのメンバー。",
+      jp: "東京都調布市出身。国立音楽大学にて、ユーフォニアムを三浦徹氏に師事、卒業時に武岡賞を受賞。フィンランド国立シベリウス音楽院に入学し、ユーフォニアムをユッカ・ミュリュス氏に師事、2010年同学院修士号取得。在学中に副科でトロンボーンを始め、現在はユーフォニアムとトロンボーンの両方でフリーランス奏者、音楽学校講師として活動。フィンランド国内外の音楽祭にもゲスト出演している。第21回日本管打楽器コンクール・ユーフォニアム部門第一位受賞。2023年6月、フィンランドを代表する作曲家カレヴィ・アホのユーフォニアム協奏曲を世界初演し、好評を得る。ユーフォリア・ブラス・セクステットのメンバー。",
     },
     picture: "/Mizuho.webp",
+    website: "https://sites.google.com/view/mizuho-kojima/home?authuser=4",
   },
   {
     name: { en: "Rina Endo", jp: "遠藤理奈" },
