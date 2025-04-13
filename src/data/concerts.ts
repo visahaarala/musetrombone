@@ -65,7 +65,7 @@ export const concerts: Concert[] = [
    {
     name: multiLanguage('Japan Tour 2022'),
     venue: multiLanguage('電気文化会館 ザ・コンサートホール'),
-    location: multiLanguage('愛知県名古屋市'),
+    location: multiLanguage('名古屋'),
     date: new Date('2022-08-09'),
   },
   {
@@ -102,16 +102,16 @@ export const concerts: Concert[] = [
     date: new Date('2023-10-14'),
   },
   {
+    name: multiLanguage('Erft Classics Opening Concert'),
+    venue: multiLanguage('Zwillingssee Hütte - Brühl'),
+    location: multiLanguage('Germany'),
+    date: new Date('2023-04-23'),
+  },
+  {
     name: multiLanguage('Debut Concert'),
     venue: multiLanguage('Koskelan Kirkko'),
     location: multiLanguage('Helsinki, Finland'),
     date: new Date('2022-04-24'),
-  },
-  {
-    name: multiLanguage('Japan Tour 2022'),
-    venue: multiLanguage('電気文化会館 ザ・コンサートホール'),
-    location: multiLanguage('名古屋市'),
-    date: new Date('2022-08-09'),
   },
   {
     name: multiLanguage('Japan Tour 2022'),
