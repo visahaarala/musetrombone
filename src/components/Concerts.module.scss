@@ -87,6 +87,12 @@
           }
         }
       }
+      .pastConcerts {
+        display: flex;
+        justify-content: center;
+        // background-color: blue;
+        grid-column: 2 / 5;
+      }
     }
   }
 }

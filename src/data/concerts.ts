@@ -5,19 +5,6 @@
 
 import multiLanguage from '../utils/multiLanguage';
 
-const createDummyConcerts = (count: number): Concert[] => {
-  const concerts: Concert[] = [];
-  for (let i = 0; i < count; i++) {
-    concerts.push({
-      name: multiLanguage('Layout Test'),
-      venue: { en: 'Minato Mirai Hall', jp: 'みなとみらいホール' },
-      location: { en: 'Yokohama, Japan', jp: '横浜' },
-      date: new Date('2020-04-01'),
-    });
-  }
-  return concerts;
-};
-
 export const concerts: Concert[] = [
   //
   // Järjestyksellä ei ole väliä, ohjelma järjestää konsertit päivämäärän mukaan.
@@ -149,8 +136,4 @@ export const concerts: Concert[] = [
     location: multiLanguage('沖縄'),
     date: new Date('2022-08-20'),
   },
-  ////////////////////////
-  // EXTRA -- REMOVE THESE
-  // for layout testing
-  ...createDummyConcerts(10),
 ];
