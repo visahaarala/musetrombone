@@ -49,8 +49,11 @@ const Concerts = ({ lang = 'en' }: { lang?: Language }) => {
   return (
     <section className={styles.concerts} id='concerts' lang={lang}>
       <div className={styles.background}>
-        <div>
-          <img src='/in-concert-2-med.jpg' alt='In concert' />
+        <div className={styles.landscape}>
+          <img src='/concert.jpg' alt='in concert' />
+        </div>
+        <div className={styles.portrait}>
+          <img src='/concert-narrow.jpg' alt='in concert' />
         </div>
       </div>
       <div className={styles.content}>
