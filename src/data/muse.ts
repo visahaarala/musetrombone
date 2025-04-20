@@ -22,7 +22,7 @@ export const musicians: Musician[] = [
     name: { en: "Mayumi Shimizu", jp: "清水真弓" },
     instrument: multiLanguage("Alto & Tenor Trombone"),
     story: {
-      en: "Story in english...",
+      en: "Before pursuing her career in music, Mayumi earned a degree in Applied Physics and Physico-Informatics from Keio University in Tokyo, followed by master’s studies in the same field. In 2005, she shifted her focus to music, studying trombone under Prof. Branimir Slokar at the Freiburg University of Music and later completing her master’s degree at the Bern University of Music with distinction. Her final performance included the world premiere of Re-slide by Vito Žuraj with Camerata Bern.She has performed with leading orchestras such as the Berlin Philharmonic, Deutsche Oper Berlin, NDR Radiophilharmonie, and the Saito Kinen Festival Orchestra. From 2007–2009, she was a member of the Karajan Academy, studying with Prof. Christhard Gössling. In 2009, she became principal trombonist of the Bruckner Orchestra Linz, and since the 2012/13 season, she has held the same position with the SWR Symphony Orchestra.Alongside her orchestral career, she is an active soloist and chamber musician, performing recitals, concertos, and world premieres. She has won several competitions, including the Gdańsk International Brass Competition, and regularly appears at international festivals such as the IPV Symposium and Thailand Brass Festival.",
       jp: "「日本の管楽器奏者で世界に通用する有な存在」とニューヨークタイムズ紙での小澤征爾のインタビュー内で語られる清水真弓は、現在南西ドイツ放送交響楽団首席トロンボーン奏者を務め、世界各地でソロ・室内楽・オーケストラ活動を行っている。慶應義塾大学理工学部卒業後、フライブルク音楽大学、ベルン芸術大学、また、古楽・サックバットをバーゼル・スコラ・カントルムにて学ぶ。ベルリン・フィルハーモニー管弦楽団「カラヤン・アカデミー」、リンツ・ブルックナー管弦楽団首席を経て現職へ移籍。これまでにライプツィヒ音楽大学講師を務めるほか、世界各国にてマスタークラス等を通じ、後進の指導にも積極的に取り組む。古楽器演奏から現代音楽まで幅広いレパートリーを持ち、様々な音楽祭に出演、トロンボーンを通じて幅広い活動を行っている。",
     },
     picture: "/Mayumi.webp",
@@ -51,7 +51,7 @@ export const musicians: Musician[] = [
     name: { en: "Rina Endo", jp: "遠藤理奈" },
     instrument: multiLanguage("Bass Trombone"),
     story: {
-      en: "Story in english...",
+      en: "Rina Endo is a  trombonist based in Leipzig, Germany. Originally from Narita, Japan, she began her musical journey at Musashino Music College in Tokyo before continuing her studies in Germany. She studied under Prof. Otmar Strobel at the Hochschule für Musik Detmold and later completed her Master of Music degree with distinction at the Hochschule für Musik und Theater Leipzig, studying with Helge von Niswandt. During her studies, Rina gained orchestral experience as an intern with the Dortmund Philharmonic Orchestra and the Jenaer Philharmonie. She is currently active as a performer and educator, regularly appearing as a substitute with the Saxon Wind Philharmonic and the Leipzig Opera. Since 2022, she has also been sharing her passion for music through teaching at the Music School Frankenberg in Central Saxony.",
       jp: "千葉県出身。武蔵野音楽大学卒業、ライプツイヒ音楽大学、デトモルト音楽大学修士課程修了。在学中、イエナ・フィルハーモニー、ドルトムント・フィルハーモニー管弦楽団で研修生を務める。現在、フリーランス奏者としてライプツィヒ歌劇場、ザクセン管楽フィルハーモニー、デッサウ歌劇場等へ客演する傍ら、フランケンベルク芸術学校、クルト・ヴァイル音楽学校の講師として、ドイツで青少年の指導にあたる。これまでにトロンボーンを喜多原和人、井上順平、ヘルゲ・フォン・ニスヴァンド、オットマー・シュトローベル、室内楽をロジャー・ボボ、トーマス・ライエンデッカーの各氏に師事。",
     },
     picture: "/Rina.webp",
