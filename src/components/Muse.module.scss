@@ -60,6 +60,10 @@
         font-weight: 100;
       }
 
+      p {
+        text-align: justify;
+      }
+
       @media (max-width: 30em) {
         display: flex;
         flex-direction: column;
