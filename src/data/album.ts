@@ -110,7 +110,7 @@ export const album: Album = {
     },
   ],
   buyLink: {
-    text: { en: "Buy album!", jp: "今すぐ購入！" },
+    text: { en: "Buy album", jp: "今すぐ購入" },
     url: "http://mayumi-shimizu.shop-pro.jp/?pid=170407828",
   },
   spotify: {
