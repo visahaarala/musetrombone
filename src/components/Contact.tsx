@@ -6,7 +6,7 @@ const dev = import.meta.env.DEV;
 
 const url = dev
   ? 'http://localhost:3000'
-  : 'https://api.musetrombone.singingtrumpet.com';
+  : 'https://api.musetrombone.com';
 
 export type InputProps = {
   name: string;
