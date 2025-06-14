@@ -46,8 +46,10 @@ export const concerts: Concert[] = [
   {
     name: multiLanguage('Japan Tour 2025 生命の躍動'),
     venue: multiLanguage('渋谷区文化総合センター 大和田さくらホール'),
-    location: multiLanguage('東京'),
+    location: multiLanguage('東京, Tokyo'),
     date: new Date('2025-10-16'),
+    // website is optional
+    website: 'https://teket.jp/471/44453',
   },
    {
     name: multiLanguage('Japan Tour 2022'),
