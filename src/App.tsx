@@ -10,7 +10,6 @@ import Mizu from './pages/Mizu';
 import Error from './pages/Error';
 import RootLayout from './pages/RootLayout';
 import ApiTest from './pages/ApiTest';
-import { useEffect } from 'react';
 
 const router = createBrowserRouter([
   {
@@ -34,9 +33,6 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  useEffect(() => {
-    document.title = navigator.language;
-  }, []);
   return <RouterProvider router={router} />;
 };
 
