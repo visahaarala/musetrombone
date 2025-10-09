@@ -36,15 +36,17 @@ const Concerts = ({ lang }: { lang: Language }) => {
     </div>
   );
 
-  const concertLinkDiv = (concert: Concert) => (
-    <div key={Math.random()} className={styles.gridDiv}>
-      {concert.website ? (
-        <a href={concert.website}>{concertContent(concert)}</a>
-      ) : (
-        concertContent(concert)
-      )}
-    </div>
-  );
+  const concertLinkDiv = (concert: Concert) => {
+    return (
+      <div key={Math.random()} className={styles.gridDiv}>
+        {concert.website ? (
+          <a href={concert.website}>{concertContent(concert)}</a>
+        ) : (
+          concertContent(concert)
+        )}
+      </div>
+    );
+  };
 
   return (
     <section className={styles.concerts} id='concerts' lang={lang}>
@@ -62,7 +64,11 @@ const Concerts = ({ lang }: { lang: Language }) => {
           <>
             {future.map(concertLinkDiv)}
             {future.length > 0 ? (
-              <div className={`${styles.pastConcerts} horizontal-line`} />
+              <>
+                <div className={`${styles.pastConcerts} horizontal-line`} />
+                {/* extra div to reset even/odd in css */}
+                <div />
+              </>
             ) : (
               ''
             )}
