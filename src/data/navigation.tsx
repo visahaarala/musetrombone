@@ -13,14 +13,14 @@ export const navLinks = (lang: Language): NavLink[] => [
   // do not change "link" or "element"
 
   {
-    name: multiLanguage('muse'),
-    link: 'muse', // don't change
-    element: <Muse lang={lang} />, // don't change
-  },
-  {
     name: multiLanguage('concerts'),
     link: 'concerts', // don't change
     element: <Concerts lang={lang} />, // don't change
+  },
+  {
+    name: multiLanguage('muse'),
+    link: 'muse', // don't change
+    element: <Muse lang={lang} />, // don't change
   },
   {
     name: multiLanguage('music'),
