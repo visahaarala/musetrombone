@@ -4,7 +4,7 @@ import styles from './Muse.module.scss';
 const Muse = ({ lang = 'en' }: { lang?: Language }) => {
   return (
     <section className={styles.muse} id='muse' lang={lang}>
-      <h2>Muse.</h2>
+      <h2>.Muse.</h2>
       {muse.map((p) => (
         <p key={Math.random()}>{p[lang]}</p>
       ))}
