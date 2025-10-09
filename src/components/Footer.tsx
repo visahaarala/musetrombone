@@ -1,13 +1,15 @@
 import { socialLinks } from '../data/social';
 import styles from './Footer.module.scss';
+import { shop } from '../data/footer';
 
-const Footer = () => {
+const Footer = ({ lang = 'en' }: { lang?: Language }) => {
   return (
     <footer className={styles.footer} id='links'>
       {/* <p>Links to blog, media articles, etc.</p> */}
       <div className='links'>
         <a href='https://musetrombone.stores.jp'>
-          ミューズ・トロンボーン・カルテットのウェッブショップです！楽譜やグッズを好評販売中。
+          {shop[lang]}
+          {/* ミューズ・トロンボーン・カルテットのウェッブショップです！楽譜やグッズを好評販売中。 */}
         </a>
       </div>
       <div className={styles.social}>

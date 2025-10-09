@@ -16,7 +16,7 @@ const Home = ({ lang }: { lang: Language }) => (
       <Music lang={lang} />
       <Contact />
     </main>
-    <Footer />
+    <Footer lang={lang} />
   </>
 );
 
