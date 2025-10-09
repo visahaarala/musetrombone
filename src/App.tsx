@@ -10,6 +10,7 @@ import Mizu from './pages/Mizu';
 import Error from './pages/Error';
 import RootLayout from './pages/RootLayout';
 import ApiTest from './pages/ApiTest';
+import { useEffect } from 'react';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,10 @@ const router = createBrowserRouter([
     children: [
       // fix this so that in japan it wil redirect to /jp
       // { index: true, loader: async () => redirect('/en') },
-      { index: true, element: <Home lang={'jp'} /> },
+      {
+        index: true,
+        element: <Home lang={navigator.language === 'ja-JP' ? 'jp' : 'en'} />,
+      },
       { path: 'en', element: <Home lang={'en'} /> },
       { path: 'jp', element: <Home lang={'jp'} /> },
       { path: 'info', element: <Info /> },
@@ -30,6 +34,11 @@ const router = createBrowserRouter([
   },
 ]);
 
-const App = () => <RouterProvider router={router} />;
+const App = () => {
+  useEffect(() => {
+    document.title = navigator.language;
+  }, []);
+  return <RouterProvider router={router} />;
+};
 
 export default App;
