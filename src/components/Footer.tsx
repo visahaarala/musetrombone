@@ -5,11 +5,9 @@ import { shop } from '../data/footer';
 const Footer = ({ lang = 'en' }: { lang?: Language }) => {
   return (
     <footer className={styles.footer} id='links'>
-      {/* <p>Links to blog, media articles, etc.</p> */}
-      <div className='links'>
+      <div className={`${styles.links} links`}>
         <a href='https://musetrombone.stores.jp'>
           {shop[lang]}
-          {/* ミューズ・トロンボーン・カルテットのウェッブショップです！楽譜やグッズを好評販売中。 */}
         </a>
       </div>
       <div className={styles.social}>
