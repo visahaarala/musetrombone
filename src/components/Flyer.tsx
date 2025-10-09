@@ -1,5 +1,11 @@
+import styles from './Flyer.module.scss';
+
 const Flyer = () => {
-  return <h1>flyer</h1>;
+  return (
+    <div className={styles.flyer}>
+      <img src='/flyer.jpg' alt='flyer' />
+    </div>
+  );
 };
 
 export default Flyer;

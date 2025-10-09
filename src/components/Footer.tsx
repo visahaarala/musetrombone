@@ -11,7 +11,7 @@ const Footer = ({ lang = 'en' }: { lang?: Language }) => {
           </a>
         </div>
       ) : (
-        ''
+        <></>
       )}
       <div className={styles.social}>
         {socialLinks.map((link) => (
