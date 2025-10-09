@@ -57,7 +57,7 @@ const Header = ({ lang = 'en' }: { lang?: Language }) => {
           </a>
         </div>
         <nav className={styles.nav}>
-          <ul className={styles.links}>
+          <ul className={styles.navlinks}>
             {links.map((link) => (
               <li key={link.name.en}>
                 <a

@@ -25,7 +25,7 @@ const Album = ({ lang = 'en' }: { lang?: Language }) => (
         </li>
       ))}
     </ul>
-    <div className={styles.links}>
+    <div className={`${styles.links} links`}>
       {album.buyLink && (
         <a href={album.buyLink.url}>{album.buyLink.text[lang]}</a>
       )}
