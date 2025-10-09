@@ -1,15 +1,18 @@
 import { socialLinks } from '../data/social';
 import styles from './Footer.module.scss';
-import { shop } from '../data/footer';
 
 const Footer = ({ lang = 'en' }: { lang?: Language }) => {
   return (
     <footer className={styles.footer} id='links'>
-      <div className={`${styles.links} links`}>
-        <a href='https://musetrombone.stores.jp'>
-          {shop[lang]}
-        </a>
-      </div>
+      {lang === 'jp' ? (
+        <div className={`${styles.links} links`}>
+          <a href='https://musetrombone.stores.jp'>
+            ミューズ・トロンボーン・カルテットのウェッブショップです！楽譜やグッズを好評販売中。
+          </a>
+        </div>
+      ) : (
+        ''
+      )}
       <div className={styles.social}>
         {socialLinks.map((link) => (
           <a href={link.href} className={styles.social__link} key={link.alt}>
