@@ -18,10 +18,9 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <Error />,
     children: [
-      // fix this so that in japan it wil redirect to /jp
-      // { index: true, loader: async () => redirect('/en') },
       {
         index: true,
+        // automatically show japanese website in Japan
         element: <Home lang={navigator.language === 'ja-JP' ? 'jp' : 'en'} />,
       },
       { path: 'en', element: <Home lang={'en'} /> },
