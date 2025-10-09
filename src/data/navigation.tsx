@@ -34,8 +34,10 @@ export const navLinks = (lang: Language): NavLink[] => [
   },
 ];
 
-export const footer: NavLink = {
-  name: multiLanguage('links'),
-  link: 'links', // don't change
-  element: <Footer />, // don't change
+export const footer = (lang: Language): NavLink => {
+  return {
+    name: multiLanguage('links'),
+    link: 'links', // don't change
+    element: <Footer lang={lang} />, // don't change
+  };
 };

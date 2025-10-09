@@ -2,7 +2,7 @@ import styles from './Music.module.scss';
 import Videos from './Videos';
 import Album from './Album';
 
-const Music = ({ lang = 'en' }: { lang?: Language }) => (
+const Music = ({ lang }: { lang: Language }) => (
   <section className={styles.music} id='music' lang={lang}>
     <h2>Music</h2>
     <Videos />

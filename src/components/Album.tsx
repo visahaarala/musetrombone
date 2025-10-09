@@ -1,7 +1,7 @@
 import styles from './Album.module.scss';
 import { album } from '../data/album';
 
-const Album = ({ lang = 'en' }: { lang?: Language }) => (
+const Album = ({ lang }: { lang: Language }) => (
   <div className={styles.album}>
     <div className={styles.image}>
       <img src={album.coverImage} alt={album.title.en} />

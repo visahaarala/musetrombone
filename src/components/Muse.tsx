@@ -1,7 +1,7 @@
 import { muse, musicians } from '../data/muse';
 import styles from './Muse.module.scss';
 
-const Muse = ({ lang = 'en' }: { lang?: Language }) => {
+const Muse = ({ lang }: { lang: Language }) => {
   return (
     <section className={styles.muse} id='muse' lang={lang}>
       <h2>Muse</h2>

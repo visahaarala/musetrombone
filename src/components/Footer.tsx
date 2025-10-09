@@ -1,7 +1,7 @@
 import { socialLinks } from '../data/social';
 import styles from './Footer.module.scss';
 
-const Footer = ({ lang = 'en' }: { lang?: Language }) => {
+const Footer = ({ lang }: { lang: Language }) => {
   return (
     <footer className={styles.footer} id='links'>
       {lang === 'jp' ? (

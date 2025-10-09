@@ -5,11 +5,11 @@ import MenuCross from '../svg/MenuCross';
 import Language from '../svg/Language';
 import { footer, navLinks } from '../data/navigation';
 
-const Header = ({ lang = 'en' }: { lang?: Language }) => {
+const Header = ({ lang }: { lang: Language }) => {
   const [langVisible, setLangVisible] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const rendered = useRef(false);
-  const links = [...navLinks(lang), footer];
+  const links = [...navLinks(lang), footer(lang)];
 
   useEffect(() => {
     if (rendered.current && langVisible) {
