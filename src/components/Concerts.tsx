@@ -4,7 +4,7 @@ import { concerts } from '../data/concerts';
 const Concerts = ({ lang = 'en' }: { lang?: Language }) => {
   const past = concerts
     .filter(
-      (concert) => concert.date.getTime() < Date.now() + 24 * 60 * 60 * 1000 // plus one day
+      (concert) => concert.date.getTime() < Date.now() - 24 * 60 * 60 * 1000 // plus one day
     )
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 
