@@ -7,19 +7,24 @@ import Header from '../components/Header';
 import Muse from '../components/Muse';
 import Music from '../components/Music';
 
-const Home = ({ lang }: { lang: Language }) => (
-  <>
-    <Header lang={lang} />
-    <main>
-      {/* <Hero /> */}
-      <Flyer />
-      <Concerts lang={lang} />
-      <Muse lang={lang} />
-      <Music lang={lang} />
-      <Contact />
-    </main>
-    <Footer lang={lang} />
-  </>
-);
+const Home = ({ lang }: { lang: Language }) => {
+  document.documentElement.lang = lang;
+  document.documentElement.translate = false;
+
+  return (
+    <>
+      <Header lang={lang} />
+      <main>
+        {/* <Hero /> */}
+        <Flyer />
+        <Concerts lang={lang} />
+        <Muse lang={lang} />
+        <Music lang={lang} />
+        <Contact />
+      </main>
+      <Footer lang={lang} />
+    </>
+  );
+};
 
 export default Home;
